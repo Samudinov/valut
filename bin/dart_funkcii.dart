@@ -15,7 +15,26 @@ void main(List<String> arguments) {
  
  int b = 1; 
  
- print(funcb (b: b));
+ print(funcb (b: b)); 
+  
+   List <int> myList = [1, 2, 3, 4, 5, 6, 7, 7];
+  
+     int myVariable = 0 ;
+    bool isContans = false;
+    myList.forEach ((e) {
+   
+    if (myVariable == e) {
+      isContans = true;
+      } 
+       myVariable = e ;
+});
+
+if (isContans = true) {
+      print('да');
+      } else {
+        print('нет');
+      }
+       
 }
 
 int functionIn2({required int a}) => a * a;
